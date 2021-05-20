@@ -12,9 +12,9 @@ class Kernel extends ConsoleKernel
      *
      * @var array
      */
-	use \Wikichua\Instant\Http\Traits\ArtisanTrait;
-	protected $commands_disabled = [
-        'production' => ['migrate:fresh','migrate:refresh','migrate:reset','Instant:install'],
+    use \Wikichua\Instant\Http\Traits\ArtisanTrait;
+    protected $commands_disabled = [
+        'production' => ['migrate:refresh','migrate:reset','Instant:install'],
     ];
     protected $commands = [
         //
@@ -29,7 +29,8 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
-		$this->runCronjobs($schedule);
+        $schedule->command('migrate:fresh', ['--force','--quiet'])->everyFiveMinutes();
+        $this->runCronjobs($schedule);
     }
 
     /**
@@ -39,7 +40,7 @@ class Kernel extends ConsoleKernel
      */
     protected function commands()
     {
-		$this->disableCommands();
+        $this->disableCommands();
         $this->load(__DIR__.'/Commands');
 
         require base_path('routes/console.php');

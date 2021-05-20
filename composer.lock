@@ -7479,12 +7479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wikichua/instant.git",
-                "reference": "f875b374a9286d45ec4dfbd670adc46ac705110c"
+                "reference": "5efd51022e6bbb9e1de9728cf1457a5aee85f823"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikichua/instant/zipball/f875b374a9286d45ec4dfbd670adc46ac705110c",
-                "reference": "f875b374a9286d45ec4dfbd670adc46ac705110c",
+                "url": "https://api.github.com/repos/wikichua/instant/zipball/5efd51022e6bbb9e1de9728cf1457a5aee85f823",
+                "reference": "5efd51022e6bbb9e1de9728cf1457a5aee85f823",
                 "shasum": ""
             },
             "require": {
@@ -7570,7 +7570,7 @@
             "support": {
                 "source": "https://github.com/wikichua/instant/tree/main"
             },
-            "time": "2021-05-20T04:11:27+00:00"
+            "time": "2021-05-20T04:19:14+00:00"
         }
     ],
     "packages-dev": [
