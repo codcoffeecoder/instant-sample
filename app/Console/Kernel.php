@@ -29,7 +29,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
-        $schedule->command('migrate:fresh', ['--force','--quiet'])->everyFiveMinutes();
+        $schedule->command('migrate:fresh', ['--force','--quiet'])->everyThreeHours();
         $this->runCronjobs($schedule);
     }
 
