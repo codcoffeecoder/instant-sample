@@ -15,6 +15,12 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
+		'Illuminate\Cache\Events\KeyWritten' => [
+            'Wikichua\Instant\Listeners\LogKeyWritten',
+        ],
+        'Illuminate\Cache\Events\KeyForgotten' => [
+            'Wikichua\Instant\Listeners\LogKeyForgotten',
+        ],
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
