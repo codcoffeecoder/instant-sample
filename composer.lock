@@ -591,16 +591,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "1.11.2",
+            "version": "1.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "9c53086695937c50c47936ed86d96150ffbcf60d"
+                "reference": "3bb5588cec00a0268829cc4a518490df6741af9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/9c53086695937c50c47936ed86d96150ffbcf60d",
-                "reference": "9c53086695937c50c47936ed86d96150ffbcf60d",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/3bb5588cec00a0268829cc4a518490df6741af9d",
+                "reference": "3bb5588cec00a0268829cc4a518490df6741af9d",
                 "shasum": ""
             },
             "require": {
@@ -670,7 +670,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/cache/issues",
-                "source": "https://github.com/doctrine/cache/tree/1.11.2"
+                "source": "https://github.com/doctrine/cache/tree/1.11.3"
             },
             "funding": [
                 {
@@ -686,7 +686,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-20T14:57:29+00:00"
+            "time": "2021-05-25T09:01:55+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -7479,12 +7479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wikichua/instant.git",
-                "reference": "22feb1ecfeb7f470b3c2e7791dd2ffbdc25baf63"
+                "reference": "46a756a5fd668f3a77a8b1705c4c939330c1ae3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikichua/instant/zipball/22feb1ecfeb7f470b3c2e7791dd2ffbdc25baf63",
-                "reference": "22feb1ecfeb7f470b3c2e7791dd2ffbdc25baf63",
+                "url": "https://api.github.com/repos/wikichua/instant/zipball/46a756a5fd668f3a77a8b1705c4c939330c1ae3b",
+                "reference": "46a756a5fd668f3a77a8b1705c4c939330c1ae3b",
                 "shasum": ""
             },
             "require": {
@@ -7570,7 +7570,7 @@
             "support": {
                 "source": "https://github.com/wikichua/instant/tree/main"
             },
-            "time": "2021-05-25T08:08:53+00:00"
+            "time": "2021-05-25T10:15:42+00:00"
         }
     ],
     "packages-dev": [
