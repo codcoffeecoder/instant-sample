@@ -1,18 +1,20 @@
 <template>
     <authenticated-layout>
         <template #page-title>
-            <inertia-link class="text-white text-sm uppercase hidden lg:inline-block font-semibold" :href="route('role')">
+            <inertia-link class="text-white text-sm uppercase hidden lg:inline-block font-semibold" :href="route('mailer')">
                 {{ $page.props.moduleName }}
             </inertia-link>
         </template>
-        <instant-content-card class="w-full xl:w-8/12 items-center">
+        <instant-content-card class="w-full xl:w-8/12">
             <template #content-title>
                 Show
             </template>
             <div class="shadow overflow-hidden sm:rounded-md">
                 <instant-display-field label="Name" :data="model.name" id="name"/>
-                <instant-display-field label="Admin" :data="model.admin" id="admin" :options="[{ value: 0, label:'No'},{ value: 1 , label:'Yes' }]"/>
-                <instant-display-field label="Permissions" :data="$page.props.selected_permissions_list" type="list" id="permissions"/>
+                <instant-display-field label="Domain" :data="model.domain" id="domain"/>
+                <instant-display-field label="Published" :data="model.published_at" id="published_at"/>
+                <instant-display-field label="Expired" :data="model.expired_at" id="expired_at"/>
+                <instant-display-field label="Status" :data="model.status" id="status" :options="$page.props.status"/>
             </div>
         </instant-content-card>
         <instant-other-content-card :model="model" />
@@ -21,10 +23,12 @@
 
 <script>
     import AuthenticatedLayout from '@/Layouts/Authenticated'
+    import InstantMultiValuesField from '@/Pages/Admin/Setting/MultiValuesField'
 
     export default {
         components: {
             AuthenticatedLayout,
+            InstantMultiValuesField,
         },
 
         data() {
@@ -39,7 +43,6 @@
         },
 
         methods: {
-
         },
     }
 </script>
